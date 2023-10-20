@@ -30,6 +30,8 @@
   },
   "scripts": {
     "fix": "gts fix",
-    "lint": "gts lint"
+    "lint": "gts lint",
+    "prepare": "npm run build",
+    "build": "tsc"
   }
 }
