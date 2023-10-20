@@ -31,6 +31,5 @@
   "scripts": {
     "fix": "gts fix",
     "lint": "gts lint"
-  },
-  "type": "module"
+  }
 }
