@@ -32,6 +32,5 @@
     "fix": "gts fix",
     "lint": "gts lint"
   },
-  "stability": "stable",
-  "types": "src/index.d.ts"
+  "type": "module"
 }
