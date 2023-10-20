@@ -24,7 +24,7 @@
     "npm": "8.19.2"
   },
   "keywords": [],
-  "main": "src/index.ts",
+  "main": "build/index.js",
   "repository": {
     "url": "https://github.com/narekhovhannisyan/boavizta-cpu-model.git"
   },
