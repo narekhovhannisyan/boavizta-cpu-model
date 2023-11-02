@@ -11,5 +11,5 @@ export interface IImpactModelInterface {
 
   authenticate(authParams: object): void;
 
-  calculate(observations: object | object[] | undefined): Promise<any[]>;
+  execute(observations: object | object[] | undefined): Promise<any[]>;
 }
