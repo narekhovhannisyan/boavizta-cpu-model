@@ -59,8 +59,8 @@ abstract class BoaviztaImpactModel implements IImpactModelInterface {
     return usageInput;
   }
 
-  // Calculates the impact of the given usage
-  async calculate(
+  // executes the impact of the given usage
+  async execute(
     observations: object | object[] | undefined = undefined
   ): Promise<any[]> {
     if (Array.isArray(observations)) {
@@ -68,7 +68,7 @@ abstract class BoaviztaImpactModel implements IImpactModelInterface {
 
       for (const observation of observations) {
         const usageResult =
-          await this.calculateUsageForObservation(observation);
+          await this.executeUsageForObservation(observation);
         results.push(usageResult);
       }
 
@@ -117,7 +117,7 @@ abstract class BoaviztaImpactModel implements IImpactModelInterface {
   }
 
   // converts the usage to the format required by Boavizta API.
-  protected async calculateUsageForObservation(
+  protected async executeUsageForObservation(
     observation: KeyValuePair
   ): Promise<KeyValuePair> {
     if (
